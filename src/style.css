@@ -37,7 +37,21 @@ main{
     width: 500px;
     height: 300px;
     display: inline;
-    margin-block: 15px;
+    margin: 15px;
     border-radius: 15px;
     padding: 10px;
+}
+.apre-tallys h3{
+    display: inline;
+}
+
+.foto-tallys {
+    display:inline;
+    position: relative;
+    left: 80%;
+    bottom: 30%;
+    border-radius: 50%;
+    width: 30%;
+    height: 50%;
+
 }
