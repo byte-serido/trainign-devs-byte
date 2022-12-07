@@ -30,3 +30,14 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+.apre-tallys {
+    color: white;
+    background-color: blueviolet;
+    width: 500px;
+    height: 300px;
+    display: inline;
+    margin-block: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
