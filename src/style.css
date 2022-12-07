@@ -30,3 +30,15 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+.linguagem{
+    display: flex;
+    font-family: 'Epilogue', sans-serif;
+    color: aliceblue;
+    text-align: left;
+}
+
+.link {
+    flex-direction: column;
+    line-height: 10px;
+  }
