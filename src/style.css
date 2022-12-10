@@ -54,6 +54,8 @@ main{
     width: 50%;
     border-radius: 15%;
     padding-left: 20px;
+    pointer-events: none;
+    user-select: none;
 } 
 
 .apre p{
@@ -61,4 +63,12 @@ main{
     line-height: 23px;
     padding-left: 26px;
     padding-right: 30px;
+}
+
+.geral p:hover{
+    transform: scale(1.1);
+}
+
+.geral p{
+    transition: transform 0.3s;
 }
