@@ -1,0 +1,31 @@
+{
+  "name": "backend-studies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniciusMaiaM/backend-studies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViniciusMaiaM/backend-studies/issues"
+  },
+  "homepage": "https://github.com/ViniciusMaiaM/backend-studies#readme",
+  "dependencies": {
+    "@prisma/client": "^4.7.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "prisma": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  }
+}
