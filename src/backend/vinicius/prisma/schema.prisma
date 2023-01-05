@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User { //Criar com letra maiscula pois já é convenção
+  id String @id @default(uuid()) // Sempre que um novo user for criado o "@default" gera um novo id
+  email String @unique // Declarando que o email é unico pra cada usuário 
+  name String
+  created_at DateTime @default(now()) //Pega a data atual da criação do usuário
+  updated_at DateTime @updatedAt //Pega a data de quando o usuário for alterado
+  movie_rent MovieRent[] @relation("user")
+
+  @@map("users") // Nomeando como a tabela vai ser escrita no banco
+}
+
+
+model Movie {
+  id String @id @default(uuid())
+  title String @unique
+  duration Int
+  release_date DateTime
+  movie_rent MovieRent[] @relation("movie") // Criado para fazer a relação entre o usuario e o aluguel
+
+  @@map("movies")
+}
+
+model MovieRent {
+  user User @relation("user", fields: [userId], references: [id]) // Criação de um campo de tipo User
+  // Com o fields identificamos qual campo de models vai se relacionar com o User e o references indica 
+  // qual campo de user possui o campo de relação
+  userId String
+  movie Movie @relation("movie", fields: [movieId], references: [id])
+  movieId String
+
+  @@id([userId, movieId]) //Dessa maneira faz uma junção entre ids para criar o id de MovieRent
+  @@map("movie_rent")
+}
