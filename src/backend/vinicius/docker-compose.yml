@@ -1,7 +1,7 @@
 version: "3"
 services:  
-  container: 
-    container-name: container
+  vinicius: 
+    container_name: vinicius
     image: postgres:13
     ports: 
       - "5432:5432" 
