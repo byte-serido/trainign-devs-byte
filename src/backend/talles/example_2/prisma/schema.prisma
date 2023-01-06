@@ -15,6 +15,7 @@ model User{
   id String @id @default(uuid())
   email String @unique
   name String
+  password String
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
   movie_rent MovieRent[] @relation("user")
