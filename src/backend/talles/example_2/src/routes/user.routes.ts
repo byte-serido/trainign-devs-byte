@@ -7,7 +7,7 @@ const getAllUsersController = new GetAllUserController();
 
 const userRoutes = Router();
 
-userRoutes.post("/", createUserController.handle);
+userRoutes.post("/create", createUserController.handle);
 userRoutes.get("/", getAllUsersController.handle);
 
 
