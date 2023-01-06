@@ -1,0 +1,10 @@
+version: "3"
+services:
+  ebcq_db:
+    container_name: postgres-YqXE
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: tallys
+      POSTGRES_DB: dev
