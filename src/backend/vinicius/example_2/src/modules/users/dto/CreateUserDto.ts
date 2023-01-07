@@ -1,4 +1,5 @@
 export interface CreateUserDto{
     email: string,
-    name: string
+    name: string,
+    password: string
 }
