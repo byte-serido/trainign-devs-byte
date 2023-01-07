@@ -14,6 +14,7 @@ model User { //Criar com letra maiscula pois já é convenção
   id String @id @default(uuid()) // Sempre que um novo user for criado o "@default" gera um novo id
   email String @unique // Declarando que o email é unico pra cada usuário 
   name String
+  password String
   created_at DateTime @default(now()) //Pega a data atual da criação do usuário
   updated_at DateTime @updatedAt //Pega a data de quando o usuário for alterado
   movie_rent MovieRent[] @relation("user")
