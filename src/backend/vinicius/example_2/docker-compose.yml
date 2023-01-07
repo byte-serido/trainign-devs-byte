@@ -1,0 +1,9 @@
+version: "3"
+services:  
+  vinicius: 
+    container_name: vinicius
+    image: postgres:13
+    ports: 
+      - "5432:5432" 
+    environment: 
+      POSTGRES_PASSWORD: Vinicius01
