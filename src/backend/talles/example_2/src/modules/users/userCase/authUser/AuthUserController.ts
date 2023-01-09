@@ -7,7 +7,7 @@ export class AuthUserController {
 
         const authUserUseCase = new AuthUserUseCase();
 
-        const result = await authUserUseCase.execute({email,password})
+        const result = await authUserUseCase.execute({email,password});
 
         return res.status(201).json(result);
     }
