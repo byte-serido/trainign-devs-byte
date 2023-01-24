@@ -3,7 +3,7 @@ import { CreateUserDTO } from "../../dtos/CreateUserDTO";
 import { prisma } from "../../../../prisma/client";
 //import { AppError } from "../../../../erros/AppError";
 
-import { bcrypt } from "bcrypt";
+import bcrypt from "bcrypt";
 
 export class CreateUserUseCase {
   async execute({
