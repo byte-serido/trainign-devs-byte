@@ -1,0 +1,29 @@
+#### listando usuarios
+GET http://172.27.122.125:3333/users
+
+#### listando filmes
+GET http://172.27.122.125:3333/movies/release
+
+#### registando user
+POST http://172.27.122.125:3333/auth/register
+Content-Type: application/json
+
+{
+    "name": "manoel2",
+    "email": "mane2@email.com",
+    "username": "mane2",
+    "password": "12345"
+}
+#### logando user
+POST http://172.27.122.125:3333/auth/login
+Content-Type: application/json
+
+{
+    "username": "mane2",
+    "password": "12345"
+}
+#### testando login
+GET http://172.27.122.125:3333/projects/ 
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNmYzcyMzZiLWI1ZGMtNGZmMC1iMmEwLTY2MTY1OGQxZGFlOSIsImlhdCI6MTY3NDU3ODEyOSwiZXhwIjoxNjc0NjY0NTI5fQ.MIpl0kf4eAPVyvSYpWvIYIrstjCdDwJ424F-iZxvmqM
+
+
