@@ -22,6 +22,8 @@ export default {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.737);
+    background-color: #13111B;
   }
 
   body {
