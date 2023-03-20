@@ -1,13 +1,17 @@
 <template lang="">
   <div>
     <MyNavbar/>
+    <MyDashboard/>
 </div>
 </template>
 <script>
 import MyNavbar from './components/MyNavbar.vue';
+import MyDashboard from './components/MyDashboard.vue';
 export default {
   components: {
     MyNavbar,
+    MyDashboard,
+
   },
 }
 </script>
