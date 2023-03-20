@@ -69,7 +69,6 @@ export default {
         background: #191622;
         box-shadow: 0px 2px 4px rgba(255, 121, 198, 0.25);
         border-radius: 4px;
-        color: #686571;
         padding: 15px;
         font-family: 'Rubik';
         font-style: normal;
