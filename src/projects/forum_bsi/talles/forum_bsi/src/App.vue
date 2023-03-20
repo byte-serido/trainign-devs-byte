@@ -18,7 +18,7 @@ export default {
 <style>
 
   * {
-    font-family: Helvetica;
+    font-family: 'Rubik';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
