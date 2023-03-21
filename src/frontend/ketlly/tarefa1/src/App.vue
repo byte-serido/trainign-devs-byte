@@ -1,12 +1,18 @@
 <template>
   <header class="cabecalho">
-    <h1>AAAAAAAAAAAA</h1>
-    <img src="./assets/img/girl-happy.jpg" class="imagem">
+    <nav>
+      <ul class="menu">
+        <li><img src="./assets/img/girl-happy.jpg" class="imagem"></li>
+        <li>
+          <p>Lilia</p>
+        </li>
+      </ul>
+    </nav>
+
+    <input type="text">
   </header>
 
   <main>
-
-    <h1>AAAAAAAAAAAAAAAAAAAAAAAA</h1>
 
   </main>
   <footer>
