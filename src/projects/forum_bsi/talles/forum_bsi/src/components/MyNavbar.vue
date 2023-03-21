@@ -31,7 +31,8 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding-left: 36px;
-        padding-right: 44px;
+        padding-right: 56px;
+
     }
 
     .card-img {
@@ -56,7 +57,6 @@ export default {
     }
 
     .area-busca {
-        display: felx;
         width: 300px;
         height: 50px;
         /* background-color: aqua; */
