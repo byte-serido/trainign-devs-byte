@@ -1,21 +1,38 @@
 <template>
+<div id="Dashboard">
     <div id="Dash-main">
-        <div class="area-busca-dash">
-            <input type="text" placeholder="Escreva aqui sua duvida ou problema..." class="input-busca-dash" />
-            <img src="../../public/img/icons/icon-send.png" alt="send" id="send-input" />
+            <div class="area-busca-dash">
+                <input type="text" placeholder="Escreva aqui sua duvida ou problema..." class="input-busca-dash" />
+                <img src="../../public/img/icons/icon-send.png" alt="send" id="send-input" />
+            </div>
+            <h1>Duvidas e Perguntas</h1>
+            <div id="section-post">
+                <div class="postagens" v-show="post" v-for="postagem in posts" :key="postagem.id">
+                    <div class="post-quest">
+                        {{ postagem.quest }}
+                    </div>
+                    <div class="interacoes">
+                        <img src="../../public/img/icons/icon-heart.svg" alt="" id="">
+                        <img src="../../public/img/icons/icon-thumbs-up.svg" alt="">
+                        <img src="../../public/img/icons/icon-thumbs-down.svg" alt="">
+                    </div>
+            </div>
+            <div class="feed-vazio" v-if="!post">
+                <h3>
+                    Nenhuma pergunta disponivel ...T_T
+                </h3>
+            </div>
         </div>
-        <h1>Duvidas e Perguntas</h1>
-        <div class="section-post">
-            <div class="postagens" v-show="post" v-for="postagem in posts" :key="postagem.id">
-                <div class="post-quest">
-                    {{ postagem.quest }}
+    </div>
+    <div id="Dash-second">
+        <h1>Recentes</h1>
+            <div id="posts-recentes">
+                <div class="new-post" v-show="post" v-for="postagem in posts" :key="postagem.id">
+                    <div class="caixa-post">
+                        {{ postagem.quest }}
+                    </div>
                 </div>
-                <div class="interacoes">
-                    <img src="../../public/img/icons/icon-heart.svg" alt="" id="">
-                    <img src="../../public/img/icons/icon-thumbs-up.svg" alt="">
-                    <img src="../../public/img/icons/icon-thumbs-down.svg" alt="">
-                </div>
-        </div>
+            </div>
     </div>
 </div>
 </template>
@@ -36,12 +53,31 @@ export default {
 };
 </script>
 <style scoped>
+
+#Dashboard {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
 #Dash-main {
     padding-left: 36px;
     padding-top: 18px;
     /* display: flex; */
     /* background-color: rgb(107, 83, 227); */
-    width: 76.8%;
+    width: 76%;
+}
+
+#Dash-second {
+    display: inline-block;
+    width: 24%;
+    min-height: 100%;
+    position: relative;
+    left: 0%;
+    border-left: 1px solid #292730;
+    padding: 15px;
+    background: #191622;
+
 }
 
 .area-busca-dash {
@@ -79,19 +115,16 @@ h1 {
     color: #ff79c6;
 }
 
-.section-post {
-    /* justify-content: space-between; */
-    /* align-items: center; */
+#section-post {
+
     max-width: 97%;
     margin: 10px;
-    /* display: flex; */
 }
-
 
 .postagens {
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     min-height: 77px;
     display: flex;
@@ -101,7 +134,6 @@ h1 {
     padding:25px;
     width: 100%;
     height: 100%;
-    /* border: #ff79c6 solid 2px; */
     background-color: #191622;
     display: flex;
     justify-content: space-between;
@@ -121,6 +153,21 @@ h1 {
     width: 22px;
     height: 20px;
     padding: 2px;
+    background:  transparent;
+
+}
+
+.feed-vazio {
+    /* background-color: #ff79c6; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
 }
 
 </style>
