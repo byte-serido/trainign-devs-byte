@@ -5,14 +5,33 @@
             <img src="../../public/img/icons/icon-send.png" alt="send" id="send-input" />
         </div>
         <h1>Duvidas e Perguntas</h1>
+        <div class="section-post">
+            <div class="postagens" v-show="post" v-for="postagem in posts" :key="postagem.id">
+                <div class="post-quest">
+                    {{ postagem.quest }}
+                </div>
+                <div class="interacoes">
+                    <img src="../../public/img/icons/icon-heart.svg" alt="" id="">
+                    <img src="../../public/img/icons/icon-thumbs-up.svg" alt="">
+                    <img src="../../public/img/icons/icon-thumbs-down.svg" alt="">
+                </div>
+        </div>
     </div>
+</div>
 </template>
 
 <script>
 export default {
     name: "MyDashboard",
     data() {
-        return {};
+        return {
+            post: true,
+            posts: [{
+                id: 1, quest: "Não consigo mudar a versão do meu Node no linux, como faço?" },
+                {id: 2, quest: "Não consigo mudar a versão do meu Vue no linux, como faço?" },
+                {id: 3, quest: "Não consigo mudar a versão do meu React no linux, como faço?" }
+            ]
+        };
     },
 };
 </script>
@@ -23,7 +42,6 @@ export default {
     /* display: flex; */
     /* background-color: rgb(107, 83, 227); */
     width: 76.8%;
-    height: auto;
 }
 
 .area-busca-dash {
@@ -60,4 +78,49 @@ h1 {
     line-height: 24px;
     color: #ff79c6;
 }
+
+.section-post {
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    max-width: 97%;
+    margin: 10px;
+    /* display: flex; */
+}
+
+
+.postagens {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    min-height: 77px;
+    display: flex;
+}
+
+.post-quest {
+    padding:25px;
+    width: 100%;
+    height: 100%;
+    /* border: #ff79c6 solid 2px; */
+    background-color: #191622;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interacoes {
+    max-width: 128px;
+    height: 70px;
+    align-items: center;
+    background: #292730;
+    display: flex;
+    align-items: center;
+}
+
+.interacoes img {
+    width: 22px;
+    height: 20px;
+    padding: 2px;
+}
+
 </style>
