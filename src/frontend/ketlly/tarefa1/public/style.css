@@ -1,8 +1,27 @@
 body {
     background-color: #13111B;
+    font-family: 'Rubik';
+    color: #ffffff;
+    font-weight: bold;
 }
 
-.imagem {
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px 18px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li p {
+    padding: 0px 16px;
+}
+
+.cabecalho .imagem {
     width: 50px;
     height: 50px;
     border-radius: 50%;
