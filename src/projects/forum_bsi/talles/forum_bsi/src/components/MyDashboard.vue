@@ -1,9 +1,10 @@
 <template>
-    <div id="Dashboard">
-        <div id="Dash-main">
+    <main id="main">
+        <section id="dashboard">
             <div class="area-busca-dash">
                 <input type="text" placeholder="Escreva aqui sua duvida ou problema..." class="input-busca-dash" />
-                <img src="../../public/img/icons/icon-send.png" alt="send" id="send-input" style="background-color: transparent"/>
+                <img src="../../public/img/icons/icon-send.png" alt="send" id="send-input"
+                    style="background-color: transparent" />
             </div>
             <h1>Duvidas e Perguntas</h1>
             <div id="section-post">
@@ -23,10 +24,10 @@
                     </h3>
                 </div>
             </div>
-        </div>
-        <div id="Dash-second">
+        </section>
+        <aside>
             <h1>Recentes</h1>
-            <div id="posts-recentes">
+            <section id="posts-recentes">
                 <div class="new-post" v-show="post" v-for="postagem in posts" :key="postagem.id">
                     <div class="caixa-post">
                         {{ postagem.quest }}
@@ -35,8 +36,8 @@
                         <h3>Tallys</h3>
                         <div style="background-color: transparent">
                             <img src="../../public/img/icons/icon-heart.svg" alt="" id="" class="icons">
-                            <img src="../../public/img/icons/icon-thumbs-up.svg" alt=""  class="icons">
-                            <img src="../../public/img/icons/icon-thumbs-down.svg" alt=""  class="icons">
+                            <img src="../../public/img/icons/icon-thumbs-up.svg" alt="" class="icons">
+                            <img src="../../public/img/icons/icon-thumbs-down.svg" alt="" class="icons">
                         </div>
                     </div>
                 </div>
@@ -45,9 +46,9 @@
                         Nenhuma pergunta disponivel ...T_T
                     </h3>
                 </div>
-            </div>
-        </div>
-    </div>
+            </section>
+        </aside>
+    </main>
 </template>
 
 <script>
@@ -57,23 +58,23 @@ export default {
         return {
             post: true,
             posts: [{
-                id: 1, quest: "Não consigo mudar a versão do meu Node no linux, como faço?" },
-                {id: 2, quest: "Não consigo mudar a versão do meu Vue no linux, como faço?" },
-                {id: 3, quest: "Não consigo mudar a versão do meu React no linux, como faço?" }
+                id: 1, quest: "Não consigo mudar a versão do meu Node no linux, como faço?"
+            },
+            { id: 2, quest: "Não consigo mudar a versão do meu Vue no linux, como faço?" },
+            { id: 3, quest: "Não consigo mudar a versão do meu React no linux, como faço?" }
             ]
         };
     },
 };
 </script>
 <style scoped>
-
-#Dashboard {
+#main {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-#Dash-main {
+#dashboard {
     display: flex;
     flex-direction: column;
     padding-left: 36px;
@@ -81,10 +82,7 @@ export default {
     width: 76%;
 }
 
-#Dash-second {
-    /* display: inline-block;
-    position: relative;
-    left: 0%; */
+aside {
     display: flex;
     flex-direction: column;
     width: 24%;
@@ -121,7 +119,9 @@ export default {
     bottom: 65%;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     color: #ff79c6;
     background-color: transparent;
 }
@@ -140,7 +140,7 @@ h1,h2,h3 {
 }
 
 .post-quest {
-    padding:25px;
+    padding: 25px;
     width: 100%;
     height: 100%;
     background-color: #191622;
@@ -163,6 +163,7 @@ h1,h2,h3 {
     background-color: transparent;
     margin-bottom: 20px;
 }
+
 .caixa-post {
     color: white;
     padding: 17px;
@@ -187,7 +188,7 @@ h1,h2,h3 {
     width: 22px;
     height: 20px;
     padding: 2px;
-    background:  transparent;
+    background: transparent;
 
 }
 
@@ -206,6 +207,4 @@ h1,h2,h3 {
 
 .feed-vazio h3 {
     color: white;
-}
-
-</style>
+}</style>
