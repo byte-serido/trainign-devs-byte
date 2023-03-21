@@ -1,5 +1,5 @@
 <template lang="">
-  <div>
+  <div id="app">
     <MyNavbar/>
     <MyDashboard/>
 </div>
@@ -26,8 +26,8 @@ export default {
     background-color: #13111B;
   }
 
-  body {
-    background-color: rgb(89, 8, 89);
+  #app{
+    height: 100vh;
   }
 
 </style>
