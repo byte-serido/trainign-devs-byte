@@ -3,7 +3,7 @@
         <div id="Dash-main">
             <div class="area-busca-dash">
                 <input type="text" placeholder="Escreva aqui sua duvida ou problema..." class="input-busca-dash" />
-                <img src="../../public/img/icons/icon-send.png" alt="send" id="send-input" />
+                <img src="../../public/img/icons/icon-send.png" alt="send" id="send-input" style="background-color: transparent"/>
             </div>
             <h1>Duvidas e Perguntas</h1>
             <div id="section-post">
@@ -33,12 +33,17 @@
                     </div>
                     <div class="interacoes-second">
                         <h3>Tallys</h3>
-                        <div style="background-color: transparent;">
+                        <div style="background-color: transparent">
                             <img src="../../public/img/icons/icon-heart.svg" alt="" id="" class="icons">
                             <img src="../../public/img/icons/icon-thumbs-up.svg" alt=""  class="icons">
                             <img src="../../public/img/icons/icon-thumbs-down.svg" alt=""  class="icons">
                         </div>
                     </div>
+                </div>
+                <div class="feed-vazio" v-if="!post">
+                    <h3>
+                        Nenhuma pergunta disponivel ...T_T
+                    </h3>
                 </div>
             </div>
         </div>
@@ -52,9 +57,9 @@ export default {
         return {
             post: true,
             posts: [{
-                id: 1, quest: "Não consigo mudar a versão do meu Node no linux, como faço?" }
-                // {id: 2, quest: "Não consigo mudar a versão do meu Vue no linux, como faço?" },
-                // {id: 3, quest: "Não consigo mudar a versão do meu React no linux, como faço?" }
+                id: 1, quest: "Não consigo mudar a versão do meu Node no linux, como faço?" },
+                {id: 2, quest: "Não consigo mudar a versão do meu Vue no linux, como faço?" },
+                {id: 3, quest: "Não consigo mudar a versão do meu React no linux, como faço?" }
             ]
         };
     },
@@ -154,6 +159,20 @@ h1,h2,h3 {
     padding: 5px;
 }
 
+.new-post {
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.caixa-post {
+    color: white;
+    padding: 17px;
+}
+
+#posts-recentes {
+    margin: 15px;
+    background-color: transparent;
+}
+
 .interacoes-second {
     display: flex;
     justify-content: space-between;
@@ -173,7 +192,8 @@ h1,h2,h3 {
 }
 
 .feed-vazio {
-    /* background-color: #ff79c6; */
+    color: white;
+    background-color: transparent;
     display: flex;
     align-items: center;
     text-align: center;
@@ -182,6 +202,9 @@ h1,h2,h3 {
     margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.feed-vazio h3 {
     color: white;
 }
 
