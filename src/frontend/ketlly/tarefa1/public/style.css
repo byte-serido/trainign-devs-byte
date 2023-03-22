@@ -8,7 +8,8 @@ body {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    padding: 16px 32px 18px;
+    padding: 16px 32px 18px 44px;
+    border-bottom: 1px solid #292730;
 }
 
 .cabecalho .menu {
@@ -26,4 +27,24 @@ body {
     height: 50px;
     border-radius: 50%;
     box-shadow: 4px 0px 10px rgba(255, 121, 198, 0.25);
+}
+
+.cabecalho input {
+    background: #191622;
+    box-shadow: 0px 2px 4px rgba(255, 121, 198, 0.25);
+    border: 0px;
+    border-radius: 4px;
+    height: 50px;
+    width: 363px;
+    padding: 0px 16.24px;
+}
+
+input::placeholder {
+    font-family: 'Rubik';
+    color: #292730;
+}
+
+input {
+    font-family: 'Rubik';
+    color: #c1bbd3;
 }
