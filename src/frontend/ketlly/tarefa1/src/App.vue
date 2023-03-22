@@ -8,8 +8,8 @@
         </li>
       </ul>
     </nav>
-
-    <input type="text">
+    <div id="pesquisa"><input type="text" placeholder="procure aqui ..."></div>
+    
   </header>
 
   <main>
