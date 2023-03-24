@@ -56,20 +56,43 @@
    
    .pergunta {
        padding: 12px 15px;
+       display: inline-block;
    }
    
    .pergunta input {
        height: 60.5px;
-       width: 1115px;
+       width: 1010.2px;
        left: 0px;
        top: 0px;
-       border-radius: 4px;
+       padding-left: 16px;
    }
    
    #lateral_edit {
        position: absolute;
        border-left: 2px solid #292730;
-       background-color: #292730;
+       background-color: #191622;
        margin-top: 0%;
        width: calc(24% - 2px);
    }
+   
+   .pergunta .botao {
+       width: 88.8px;
+       height: 60.5px;
+       position: absolute;
+       background-color: #191622;
+       border: 0px;
+   }
+   
+   .title {
+       color: #FF79C6;
+   }
+   
+   .principal .title {
+       padding: 60px 15px 15px;
+   }
+   
+   #lateral_edit .title {
+       padding: 15px 10px;
+   }
+   
+   .questoes {}
