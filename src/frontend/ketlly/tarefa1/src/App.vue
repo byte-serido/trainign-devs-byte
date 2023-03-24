@@ -15,11 +15,13 @@
   <main>
     <div class="principal edit">
       <div class="pergunta">
-        <input type="text" class="fontTexto" placeholder="escreva aqui sua duvida ou problema...">
-        <button><img src="" alt=""></button>
+        <input type="text" class="fontTexto input" placeholder="escreva aqui sua duvida ou problema...">
+        <button class="botao"><img src="./assets/img/Shape.svg" alt=""></button>
       </div>
+      <h2 class="title">Duvidas e Perguntas</h2>
+      <div class="questoes"></div>
     </div>
-    <div id="lateral_edit" class="edit">adoleta</div>
+    <div id="lateral_edit" class="edit"><h2 class="title">Recentes</h2></div>
   </main>
   <footer>
   </footer>
