@@ -19,7 +19,7 @@
        height: 100%;
    }
    
-   .cabecalho nav li p {
+   .cabecalho nav ul li p {
        padding: 0px 16px;
    }
    
@@ -30,11 +30,25 @@
        box-shadow: 4px 0px 10px rgba(255, 121, 198, 0.25);
    }
    
-   .cabecalho input {
+   #pesquisa input {
        height: 38px;
-       width: 322px;
+       width: 277px;
        padding: 0px 16px;
+       border-radius: 4px 0px 0px 4px;
+   }
+   
+   #pesquisa button {
+       width: 45px;
+       height: 38px;
+       background-color: #191622;
+       border: 0px;
+       border-radius: 0px 4px 4px 0px;
+       position: absolute;
+   }
+   
+   #pesquisa {
        border-radius: 4px;
+       padding-right: 45px;
        box-shadow: 0px 2px 4px rgba(255, 121, 198, 0.25);
    }
    
@@ -94,5 +108,3 @@
    #lateral_edit .title {
        padding: 15px 10px;
    }
-   
-   .questoes {}
