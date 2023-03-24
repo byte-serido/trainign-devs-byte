@@ -9,7 +9,8 @@
       </ul>
     </nav>
     <div id="pesquisa">
-      <input type="text" placeholder="procure aqui ..." class="fontTexto">
+      <input type="text" placeholder="procure aqui ..." class="fontTexto"><button><img src="./assets/img/Shapebuscar.svg" alt=""></button>
+      
     </div>
   </header>
   <main>
