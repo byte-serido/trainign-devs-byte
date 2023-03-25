@@ -110,3 +110,10 @@
    #lateral_edit .title {
        padding: 15px 10px;
    }
+   
+   .semComentario {
+       height: calc(100vh - 245.8px);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
