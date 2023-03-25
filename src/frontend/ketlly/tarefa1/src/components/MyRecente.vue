@@ -1,5 +1,5 @@
 <template>
-    <div id="div">
+    <div id="div2">
         <div class="questao">
             <p>Não consigo mudar a versão Node no linux, como faço?</p>
         </div>
@@ -23,7 +23,7 @@ p {
     padding-top: 12px;
 }
 
-#div {
+#div2 {
     margin-left: 15px;
     margin-right: 38px;
     background-color: #13111B;
