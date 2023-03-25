@@ -9,7 +9,8 @@
       </ul>
     </nav>
     <div id="pesquisa">
-      <input type="text" placeholder="procure aqui ..." class="fontTexto"><button><img src="./assets/img/Shapebuscar.svg" alt=""></button>
+      <input type="text" placeholder="procure aqui ..." class="fontTexto"><button><img src="./assets/img/Shapebuscar.svg"
+          alt=""></button>
     </div>
   </header>
   <main>
@@ -20,9 +21,18 @@
       </div>
       <h2 class="title">Duvidas e Perguntas</h2>
       <Duvida v-if="isComponent"></Duvida>
-      <div v-else class="semComentario"><p >Nenhuma pergunta disponível... T_T</p></div>
+      <div v-else class="semComentario">
+        <p>Nenhuma pergunta disponível... T_T</p>
+      </div>
     </div>
-    <div id="lateral_edit" class="edit"><h2 class="title">Recentes</h2></div>
+    <div id="lateral_edit" class="edit">
+      <h2 class="title">Recentes</h2>
+      <Recente v-if="isComponent"></Recente>
+      <div v-else class="semComentario">
+        <p>Nenhuma pergunta disponível... T_T</p>
+      </div>
+    </div>
+
   </main>
   <footer>
   </footer>
@@ -30,12 +40,13 @@
 
 <script>
 import Duvida from "@/components/DuvidaPergunda.vue"
+import Recente from "@/components/MyRecente.vue"
 export default {
   components: {
-    Duvida
+    Duvida, Recente,
   },
-  data(){
-    return{
+  data() {
+    return {
       isComponent: false,
     }
   },
