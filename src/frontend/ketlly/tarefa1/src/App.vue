@@ -20,7 +20,7 @@
         <button class="botao"><img src="./assets/img/Shape.svg" alt=""></button>
       </div>
       <h2 class="title">Duvidas e Perguntas</h2>
-      <div class="questoes"></div>
+      <Duvida></Duvida>
     </div>
     <div id="lateral_edit" class="edit"><h2 class="title">Recentes</h2></div>
   </main>
@@ -29,7 +29,12 @@
 </template>
 
 <script>
+import Duvida from "@/components/DuvidaPergunda.vue"
 export default {
+  components: {
+    Duvida
+  },
+
 
 }
 </script>
