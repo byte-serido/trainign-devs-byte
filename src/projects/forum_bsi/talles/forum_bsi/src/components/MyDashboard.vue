@@ -32,7 +32,7 @@
                     <div class="caixa-post">
                         {{ postagem.quest }}
                     </div>
-                    <div class="interacoes-second">
+                    <div class="interacoes-aside">
                         <h3>Tallys</h3>
                         <div style="background-color: transparent">
                             <img src="../../public/img/icons/icon-heart.svg" alt="" id="" class="icons">
@@ -110,6 +110,7 @@ aside {
     align-items: center;
     text-transform: lowercase;
     background: #191622;
+    border: none;
 }
 
 #send-input {
@@ -147,6 +148,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 15px;
 }
 
 .interacoes {
@@ -157,16 +159,19 @@ h3 {
     display: flex;
     align-items: center;
     padding: 5px;
+    border-radius: 15px;
 }
 
 .new-post {
     background-color: transparent;
     margin-bottom: 20px;
+    
 }
 
 .caixa-post {
     color: white;
     padding: 17px;
+    border-radius: 15px;
 }
 
 #posts-recentes {
@@ -174,7 +179,7 @@ h3 {
     background-color: transparent;
 }
 
-.interacoes-second {
+.interacoes-aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -182,6 +187,7 @@ h3 {
     height: 62px;
     background: #292730;
     padding: 15px;
+    border-radius: 15px;
 }
 
 .icons {
@@ -190,6 +196,10 @@ h3 {
     padding: 2px;
     background: transparent;
 
+} 
+.icons:hover {
+    transition: 0.5;
+    cursor: pointer;
 }
 
 .feed-vazio {

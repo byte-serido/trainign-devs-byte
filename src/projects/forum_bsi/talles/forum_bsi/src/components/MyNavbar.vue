@@ -44,7 +44,6 @@ export default {
         width: 50px;
         height: 50px;
         border-radius: 50px;
-        box-shadow: 4px 0px 10px rgba(255, 121, 198, 0.25);
 
     }
 
@@ -67,7 +66,6 @@ export default {
         width: 100%;
         height: 100%;
         background: #191622;
-        box-shadow: 0px 2px 4px rgba(255, 121, 198, 0.25);
         border-radius: 4px;
         padding: 15px;
         font-family: 'Rubik';
@@ -75,11 +73,8 @@ export default {
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
-
-        text-transform: lowercase;
-        /* background: url(../../public/img/icons/icon-search.svg) no-repeat right; */
-        
-    
+        border: none;
+        text-transform: lowercase;        
     }
 
     #search {
