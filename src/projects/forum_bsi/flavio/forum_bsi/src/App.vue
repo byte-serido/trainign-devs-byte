@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <NavbarForum />
   </div>
 </template>
@@ -15,4 +15,16 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  min-height: 100%;
+  background: #13111b;
+}
+</style>
