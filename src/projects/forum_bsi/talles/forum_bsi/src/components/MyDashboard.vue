@@ -141,25 +141,25 @@ h3 {
 }
 
 .post-quest {
-    padding: 25px;
-    width: 100%;
-    height: 100%;
-    background-color: #191622;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 15px;
+padding: 25px;
+width: 100%;
+height: 100%;
+background-color: #191622;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 15px 0px 0px 15px;
 }
 
 .interacoes {
-    max-width: 128px;
-    height: 70px;
-    align-items: center;
-    background: #292730;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    border-radius: 15px;
+max-width: 128px;
+height: 70px;
+align-items: center;
+background: #292730;
+display: flex;
+align-items: center;
+padding: 5px;
+border-radius: 0px 15px 15px 0px;
 }
 
 .new-post {
@@ -171,7 +171,7 @@ h3 {
 .caixa-post {
     color: white;
     padding: 17px;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 #posts-recentes {
@@ -187,19 +187,19 @@ h3 {
     height: 62px;
     background: #292730;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 .icons {
-    width: 22px;
-    height: 20px;
-    padding: 2px;
-    background: transparent;
-
-} 
+width: 22px;
+height: 20px;
+padding: 2px;
+background: transparent;
+cursor: pointer;
+transition: transform 0.3s;
+}
 .icons:hover {
-    transition: 0.5;
-    cursor: pointer;
+transform: scale(1.1);
 }
 
 .feed-vazio {
