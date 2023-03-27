@@ -27,3 +27,47 @@ export default {
   },
 };
 </script>
+
+<style>
+.navbar {
+  grid-area: navbar;
+  background-color: #13111b;
+  border-bottom: 1px solid #292730;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.img {
+  border-radius: 50%;
+  box-shadow: 4px 0px 10px rgba(255, 121, 198, 0.25);
+}
+.search {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  border: 0;
+  margin-right: 32px;
+  height: 40px;
+  background: #191622;
+  box-shadow: 0px 2px 4px rgba(255, 121, 198, 0.25);
+  border-radius: 4px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  width: 80vh;
+}
+
+.search::placeholder {
+  color: #292730;
+  text-transform: lowercase;
+  display: flex;
+  align-items: center;
+}
+</style>
