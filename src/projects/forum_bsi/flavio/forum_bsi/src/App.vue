@@ -1,9 +1,9 @@
 <template>
-  <div class="">
+  <body class="grid-container">
     <NavbarForum />
     <MainForum />
     <AsideForum />
-  </div>
+  </body>
 </template>
 
 <script>
@@ -32,5 +32,28 @@ body {
   font-family: "Rubik", sans-serif;
   min-height: 100%;
   background: #13111b;
+  padding: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "navbar" 50px
+    "main" auto
+    "sidebar" auto
+    "footer" 50px;
+
+  font-size: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .grid-container {
+    grid-template:
+      "navbar navbar" 60px
+      "main sidebar" auto "footer footer" 50px;
+
+    grid-template-columns: 4fr 1fr;
+    font-size: 1.2rem;
+  }
 }
 </style>
