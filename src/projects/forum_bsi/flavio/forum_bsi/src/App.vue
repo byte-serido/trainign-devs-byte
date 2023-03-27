@@ -1,16 +1,19 @@
 <template>
   <div class="">
     <NavbarForum />
+    <MainForum />
   </div>
 </template>
 
 <script>
+import MainForum from "./components/MainForum.vue";
 import NavbarForum from "./components/NavbarForum.vue";
 
 export default {
   name: "App",
   components: {
     NavbarForum,
+    MainForum,
   },
 };
 </script>
