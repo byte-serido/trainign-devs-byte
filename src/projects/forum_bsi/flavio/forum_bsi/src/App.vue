@@ -43,8 +43,6 @@ body {
     "navbar" 50px
     "main" auto
     "sidebar" auto;
-
-  font-size: 1rem;
 }
 
 @media (min-width: 1000px) {
@@ -52,8 +50,6 @@ body {
     grid-template:
       "navbar navbar" 84px
       "main sidebar" auto;
-    /*grid-template-columns: 2fr 1fr;*/
-    font-size: 1.2rem;
   }
 }
 </style>

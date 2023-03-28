@@ -49,8 +49,6 @@ export default {
   box-shadow: 4px 0px 10px rgba(255, 121, 198, 0.25);
 }
 .search {
-  font-family: "Rubik", sans-serif;
-  font-size: 1rem;
   border: 0;
   margin-right: 32px;
   background: #191622;

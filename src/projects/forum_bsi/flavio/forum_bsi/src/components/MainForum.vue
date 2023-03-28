@@ -31,9 +31,6 @@ export default {
 }
 
 .boxcreate {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 
