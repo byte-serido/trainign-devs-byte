@@ -53,7 +53,6 @@ export default {
   font-size: 1rem;
   border: 0;
   margin-right: 32px;
-  height: 40px;
   background: #191622;
   box-shadow: 0px 2px 4px rgba(255, 121, 198, 0.25);
   border-radius: 4px;
@@ -61,7 +60,9 @@ export default {
   display: flex;
   align-items: center;
   padding-left: 15px;
-  width: 80vh;
+  height: 50px;
+  width: 363px;
+  border-radius: 4px;
 }
 
 .search::placeholder {

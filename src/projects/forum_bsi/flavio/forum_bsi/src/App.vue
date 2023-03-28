@@ -30,9 +30,11 @@ export default {
 
 body {
   font-family: "Rubik", sans-serif;
+  font-weight: 700;
   min-height: 100%;
   background: #13111b;
   padding: 5px;
+  width: 1728px;
 }
 
 .grid-container {
@@ -40,8 +42,7 @@ body {
   grid-template:
     "navbar" 50px
     "main" auto
-    "sidebar" auto
-    "footer" 50px;
+    "sidebar" auto;
 
   font-size: 1rem;
 }
@@ -49,10 +50,9 @@ body {
 @media (min-width: 1000px) {
   .grid-container {
     grid-template:
-      "navbar navbar" 60px
-      "main sidebar" auto "footer footer" 50px;
-
-    grid-template-columns: 4fr 1fr;
+      "navbar navbar" 84px
+      "main sidebar" auto;
+    /*grid-template-columns: 2fr 1fr;*/
     font-size: 1.2rem;
   }
 }

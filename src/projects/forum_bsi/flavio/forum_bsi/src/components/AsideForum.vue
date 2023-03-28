@@ -15,10 +15,13 @@ export default {
 </script>
 <style>
 .sidebar {
+  height: 100vh;
+  width: 407px;
   grid-area: sidebar;
   background: #191622;
   color: #ff79c6;
   padding: 17px;
+  border-left: 1px solid #292730;
 }
 
 .card p {
