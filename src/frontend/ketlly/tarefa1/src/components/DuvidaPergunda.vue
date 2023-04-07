@@ -1,7 +1,7 @@
 <template>
     <div id="div">
         <div class="questao">
-            <p>Não consigo mudar a versão Node no linux, como faço?</p>
+            <p>{{ duvida }}</p>
         </div>
         <div class="botoes">
             <button><img src="../assets/img/coracao.svg" alt=""></button>
@@ -12,6 +12,9 @@
 </template>
 <script>
 export default {
+    props: {
+        duvida: String
+    }
 
 }
 </script>

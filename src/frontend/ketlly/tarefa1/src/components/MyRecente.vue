@@ -1,10 +1,10 @@
 <template>
     <div id="div2">
         <div class="questao">
-            <p>Não consigo mudar a versão Node no linux, como faço?</p>
+            <p>{{ duvida }}</p>
         </div>
         <div class="botoes">
-            <p>Gustavo</p>
+            <p>{{ nome }}</p>
             <div><button><img src="../assets/img/coracao.svg" alt=""></button>
             <button><img src="../assets/img/positivo.svg" width="26px"></button>
             <button><img src="../assets/img/negativo.svg" alt=""></button></div>
@@ -14,6 +14,10 @@
 </template>
 <script>
 export default {
+    props: {
+        duvida: String,
+        nome: String
+    }
 
 }
 </script>
