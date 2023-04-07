@@ -20,7 +20,7 @@
         <button class="botao" @click="isComponent = !isComponent"><img src="./assets/img/Shape.svg"></button>
       </div>
       <h2 class="title">Duvidas e Perguntas</h2>
-      <Duvida v-if="isComponent"></Duvida>
+      <Duvida duvida="dkjshflkjsdhklfjhsdsdssss" v-if="isComponent"> </Duvida>
       <div v-else class="semComentario">
         <p>Nenhuma pergunta disponível... T_T</p>
       </div>
@@ -48,6 +48,12 @@ export default {
   data() {
     return {
       isComponent: true,
+      duvidas: [{texto:"Como instalar o Linux?", nome:"Debora"},
+      { texto: "Quais teclas formata o código automaticamente?", nome: "Lucas" },
+      { texto: "O chat GPT não funciona, o que fazer?", nome: "Tihago" },
+      { texto: "Como piaratear o pacote ofice", nome: "Thaina" },
+      { texto: "Como atualizar o windows?", nome: "Dona Cecilia" },
+      { texto: "Como ficar rico programando?", nome: "Roberto" }]
     }
   },
 
